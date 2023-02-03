@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:just_audio/just_audio.dart';
 
+const url = 'https://www.kozco.com/tech/organfinale.mp3';
+
 class PageManager {
   final progressNotifier = ValueNotifier<ProgressBarState>(
     ProgressBarState(
@@ -11,8 +13,16 @@ class PageManager {
   );
   final buttonNotifier = ValueNotifier<ButtonState>(ButtonState.paused);
 
-  static const url =
-      'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3';
+  // static const url =
+  //     'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3';
+
+  // static const List<String> urlList = [
+  //   'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3',
+  //   'https://www.kozco.com/tech/organfinale.mp3'
+  //   'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3'
+  //   'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3'
+  //   'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3'
+  // ];
 
   late AudioPlayer _audioPlayer;
   PageManager() {
